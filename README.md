@@ -1,6 +1,6 @@
 # n8n-nodes-browser
 
-[![npm version](https://badge.fury.io/js/n8n-nodes-browser.svg)](https://badge.fury.io/js/@oneacrefund%2Fn8n-nodes-browser)
+[![npm version](https://badge.fury.io/js/n8n-nodes-browser.svg)](https://badge.fury.io/js/n8n-nodes-browser)
 
 This is an n8n community node to control a headless browser using the [Browserless](https://browserless.js.org) library (itself based on [Puppeteer](https://pptr.dev)).
 
