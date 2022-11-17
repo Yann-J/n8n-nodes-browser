@@ -11,18 +11,18 @@ import {
 // @ts-ignore
 import createBrowserless from 'browserless';
 
-export class Browserless implements INodeType {
+export class Browser implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Browserless',
+		displayName: 'Browser',
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		documentationUrl: 'https://github.com/one-acre-fund/n8n-nodes-browserless',
-		name: 'browserless',
+		documentationUrl: 'https://github.com/one-acre-fund/n8n-nodes-browser',
+		name: 'browser',
 		icon: 'file:chrome.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'A node to run a headless browser and take screenshots or PDF',
 		defaults: {
-			name: 'Browserless',
+			name: 'Browser',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
