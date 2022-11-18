@@ -1,12 +1,7 @@
 {
 	"compilerOptions": {
-		"lib": [
-			"es2017",
-			"es2019"
-		],
-		"types": [
-			"node",
-		],
+		"lib": ["es2017", "es2019", "dom"],
+		"types": ["node"],
 		"module": "commonjs",
 		"noImplicitAny": true,
 		"removeComments": true,
@@ -19,12 +14,7 @@
 		"target": "es2019",
 		"sourceMap": true,
 		"esModuleInterop": true,
-		"useUnknownInCatchVariables": false,
+		"useUnknownInCatchVariables": false
 	},
-	"include": [
-		"credentials/**/*",
-		"nodes/**/*",
-		"nodes/**/*.json",
-		"package.json",
-	],
+	"include": ["credentials/**/*", "nodes/**/*", "nodes/**/*.json", "package.json"]
 }
