@@ -643,7 +643,7 @@ export class Browser implements INodeType {
 			page.setExtraHTTPHeaders(headers);
 
 			await page.goto(url);
-			// wait for some standard signals
+			// wait for some standard readiness signals
 			await page.evaluate('document.fonts.ready');
 			await page.$$eval('img[src]:not([aria-hidden="true"])', (elements) =>
 				Promise.all(
@@ -651,7 +651,11 @@ export class Browser implements INodeType {
 						.filter(
 							(el) => el.getBoundingClientRect().top <= el!.ownerDocument!.defaultView!.innerHeight,
 						)
-						.map((el) => (el as any).decode()),
+						.map((el) => {
+							try {
+								(el as any).decode();
+							} catch {}
+						}),
 				),
 			);
 
