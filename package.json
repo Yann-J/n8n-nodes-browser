@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-browser",
-	"version": "0.2.3",
+	"version": "0.2.4",
 	"description": "N8n node to perform headless browser operations such as saving screenshots and PDF, using the browserless library",
 	"keywords": [
 		"n8n-community-node-package"
